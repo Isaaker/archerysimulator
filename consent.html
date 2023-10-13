@@ -30,7 +30,7 @@
 <main>
   <body>
     <script>
-      function consent{
+      function consent(){
         //Validate URL
         if (!arguments) {
           alert("Ha habido un problema al intentar regresar a el login, intente volver a inciar sesión desde el dominio normal (ghostsimulator.nsupdate.info)");
@@ -52,7 +52,7 @@
     <p>Antes de continuar, necesitamos que acepte nuestras Condiciones de Uso y Política de Privacidad que se recoge en el siguiente documento: </p>
     <iframe src="./CONDITIONS.html" title="Condiciones de Uso y Política de Privacidad" height="200" width="700"></iframe>
     <br>
-    <button onclick="consent">Acepto las Condiciones de Uso y Política de Privacidad</button>
+    <button onclick="consent()">Acepto las Condiciones de Uso y Política de Privacidad</button>
     <p class="red_text">Su decisión sera almacenada junto a la información de su cuenta, para retirar el consentimiento deberá de eliminar la misma.</p>
   </body>
 </main>
