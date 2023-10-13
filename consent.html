@@ -31,6 +31,11 @@
   <body>
     <script>
       function consent{
+        //Validate URL
+        if (!arguments) {
+          alert("Ha habido un problema al intentar regresar a el login, intente volver a inciar sesión desde el dominio normal (ghostsimulator.nsupdate.info)");
+        }
+        
         //Get URL
         const currentUrl = window.location.href;
 
@@ -38,7 +43,7 @@
         const arguments = currentUrl.split("?")[1];
 
         //New URL with arguments
-        window.location.href = "https://ghostsimulator.eu.auth0.com/continue" + arguments;
+        window.location.replace("https://ghostsimulator.eu.auth0.com/continue" + arguments);;
       }
     </script>
 
