@@ -1,0 +1,83 @@
+site_name: Ghost Simulator Documentation
+site_url: https://isaaker.github.io/archerysimulator
+site_description: 
+copyright: Copyright &copy; 2021-2023 Isaac Hernan
+
+theme:
+    name: material
+    language: "en"
+    logo: ./images/archery.png
+    favicon: ./images/favicon.ico
+    font:
+        text: Ubuntu 
+        code: IBM Plex Mono 
+    features:
+      - navigation.tabs
+      - navigation.tabs.sticky
+      - navigation.sections
+      - navigation.top
+      - navigation.footer
+    palette:
+      - primary: yellow
+      - accent: cyan 
+      - media: "(prefers-color-scheme)"
+        toggle:
+          icon: material/brightness-auto
+          name: Switch to light mode
+      - media: "(prefers-color-scheme: light)"
+        scheme: default
+        toggle:
+          icon: material/brightness-7
+          name: Switch to dark mode
+      - media: "(prefers-color-scheme: dark)"
+        scheme: slate
+        toggle:
+          icon: material/brightness-4
+          name: Switch to system preference
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+
+plugins:
+  - awesome-pages:
+      strict: false
+  - redirects
+  - search
+  - mkdocs-simple-hooks:
+      hooks:
+        on_config: "hooks.on_config:deploy_hooks"
+  - rss:
+      date_from_meta:
+        as_creation: "date"
+        as_update: false
+        datetime_format: "%Y-%m-%d"
+      pretty_print: !ENV [PRETTY_RSS, false]
+      length: 30
+      match_path: "./*"
+
+
+
+nav:
+    - Home: index.md
+    
+
+extra:
+  social:
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/profile.php?id=61554522732668
+    - icon: fontawesome/brands/github
+      link: http://github.com/Isaaker/Ghost_Simulator_ES
+    - icon: fontawesome/brands/instagram 
+      link: https://www.instagram.com/archerysimulator/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ArcheryGhost
