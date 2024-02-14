@@ -1,6 +1,6 @@
-site_name: GhostSim Documentation
+site_name: Archery Ghost Simulator Documentation
 site_url: https://isaaker.github.io/archerysimulator
-site_description: GhostSim Documentation
+site_description: Archery Ghost Simulator - Documentation
 copyright: Copyright &copy; 2024 Isaac Hernan
 
 theme:
@@ -18,7 +18,7 @@ theme:
       - navigation.top
       - navigation.footer
     palette:
-      - primary: yellow
+      - primary: custom
       - accent: cyan 
       - media: "(prefers-color-scheme)"
         toggle:
