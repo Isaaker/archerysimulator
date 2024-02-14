@@ -81,3 +81,6 @@ extra:
       link: https://www.instagram.com/archerysimulator/
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/ArcheryGhost
+      
+extra_css:
+  - stylesheets/extra.css
