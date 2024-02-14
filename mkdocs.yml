@@ -1,7 +1,7 @@
 site_name: GhostSim Documentation
 site_url: https://isaaker.github.io/archerysimulator
 site_description: GhostSim Documentation
-copyright: Copyright &copy; 2021-2024 Isaac Hernan
+copyright: Copyright &copy; 2024 Isaac Hernan
 
 theme:
     name: material
