@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Archery Ghost Simulator Documentation","text":"<p>Welcome to Documentation!. Here you the developer and users can read about the project and how its code works.</p> <p>Some pages that may be of interest to developers:</p> <p>License: CC BY-NC-ND 4.0</p>"}]}

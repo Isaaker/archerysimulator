@@ -1,0 +1,59 @@
+<!doctype html>
+<html
+<head>
+
+<!--- Responsive Platform --->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt>
+
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>Consent</title>
+
+<style>
+  body{
+    font-family: Century;
+    align-items: center;
+    text-align: center;
+    background-color: #fade95;
+  }
+  button{
+    background-color: whitesmoke;
+    color: black;
+  }
+  .red_text{
+    font-family: Century;
+    font-size: 10px;
+    color: red;
+  }
+</style>
+</head>
+<main>
+  <body>
+    <script>
+      function consent(){
+        //Validate URL
+        if (!arguments) {
+          alert("Ha habido un problema al intentar regresar a el login, intente volver a inciar sesión desde el dominio normal (ghostsimulator.nsupdate.info)");
+        }
+        
+        //Get URL
+        const currentUrl = window.location.href;
+
+        //Get arguments
+        const arguments = currentUrl.split("?")[1];
+
+        //New URL with arguments
+        window.location.replace("https://ghostsimulator.eu.auth0.com/continue?" + arguments);
+      }
+    </script>
+
+    
+    <h1>Bienvenido</h1>
+    <p>Antes de continuar, necesitamos que acepte nuestras Condiciones de Uso y Política de Privacidad que se recoge en el siguiente documento: </p>
+    <iframe src="./CONDITIONS.html" title="Condiciones de Uso y Política de Privacidad" height="200" width="350"></iframe>
+    <br>
+    <button onclick="consent()">Acepto las Condiciones de Uso y Política de Privacidad</button>
+    <p class="red_text">Su decisión sera almacenada junto a la información de su cuenta, para retirar el consentimiento deberá de eliminar la misma.</p>
+  </body>
+</main>
+</html>
