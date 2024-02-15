@@ -1,6 +1,6 @@
 # Auth0
 
-![Auth0 logo](./images/auth0.png)
+![Auth0 logo](../images/auth0.png)
 
 ## About
 
@@ -58,11 +58,10 @@ This method has been created as a double layer of security to avoid that if the 
 5. The user re-login with the new email and accepts the Conditions of use*
 6. The user can now use the new email!!!
 
-*[Please refer to this section of the Conditions of use](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/CONDITIONS.md#aceptación-1)
+*[Please refer to this section of the Conditions of use](../CONDITIONS.html)
 > Al cambiar su dirección de email (previo aviso al administrador que es el encargado de realizar el cambio), se le volverá a solicitar que acepte las condiciones de uso de la plataforma, esto no implica que al cambiar el email halla dejado de aceptar las condiciones de uso, si no que nos indica que usted también acepta que se traten los datos de ese email.
 
 ## Auth0 endpoints
-
 
 
 |URL|Use|

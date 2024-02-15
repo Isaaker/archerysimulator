@@ -68,9 +68,13 @@ plugins:
 
 
 nav:
-    - Home: index.md
-    - Auth0: documentation/auth0.md
-    - Flask: documentation/flask.md
+    - "Home": "index.md"
+    - "Contributing":
+      - "Contributing to the Project": "documentation/how_projects_work.md"
+      - "Contributing to the Documentation": "documentation/contributing_documentation.md"
+    - "Technologies":
+      - "Auth0": "documentation/auth0.md"
+      - "Flask": "documentation/flask.md"
     
 
 extra:
