@@ -47,6 +47,10 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.superfences
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 plugins:
   - awesome-pages:
@@ -66,13 +70,12 @@ plugins:
       match_path: "./*"
 
 
-
 nav:
     - "Home": "index.md"
-    - "Contributing":
+    - "Contributing": "index.md"
       - "Contributing to the Project": "documentation/how_projects_work.md"
       - "Contributing to the Documentation": "documentation/contributing_documentation.md"
-    - "Technologies":
+    - "Technologies": "index.md"
       - "Auth0": "documentation/auth0.md"
       - "Flask": "documentation/flask.md"
     
