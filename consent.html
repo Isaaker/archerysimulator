@@ -31,16 +31,16 @@
   <body>
     <script>
       function consent(){
-        //Validate URL
-        if (!arguments) {
-          alert("Ha habido un problema al intentar regresar a el login, intente volver a inciar sesión desde el dominio normal (ghost.piscinadeentropia.es)");
-        }
-        
         //Get URL
         const currentUrl = window.location.href;
 
         //Get arguments
         const arguments = currentUrl.split("?")[1];
+
+        //Validate URL
+        if (!arguments) {
+          alert("Ha habido un problema al intentar regresar a el login, intente volver a inciar sesión desde el dominio normal (ghost.piscinadeentropia.es)");
+        }
 
         //New URL with arguments
         window.location.replace("https://ghostsimulator.eu.auth0.com/continue?" + arguments);
