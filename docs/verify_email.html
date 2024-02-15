@@ -7,7 +7,7 @@
 
 <meta charset="utf-8">
 <meta name="robots" content="noindex">
-<title>Consent</title>
+<title>Verifique su cuenta</title>
 
 <style>
   body{
@@ -30,7 +30,7 @@
 <main>
   <body>
     <script>
-      function consent(){
+      function validate(){
         //Validate URL
         if (!arguments) {
           alert("Ha habido un problema al intentar regresar a el login, intente volver a inciar sesión desde el dominio normal (ghost.piscinadeentropia.es)");
@@ -47,13 +47,12 @@
       }
     </script>
 
-    
-    <h1>Bienvenido</h1>
-    <p>Antes de continuar, necesitamos que acepte nuestras Condiciones de Uso y Política de Privacidad que se recoge en el siguiente documento: </p>
-    <iframe src="./CONDITIONS.html" title="Condiciones de Uso y Política de Privacidad" height="200" width="350"></iframe>
+    <img src="./images/email.svg" width="250" height="250" /></a>
+    <h1>Verifique su email</h1>
+    <p>Antes de continuar, necesitamos que verifique su cuenta mediante el email que le hemos enviado al email que nos facilitó.</p>
     <br>
-    <button onclick="consent()">Acepto las Condiciones de Uso y Política de Privacidad</button>
-    <p class="red_text">Su decisión sera almacenada junto a la información de su cuenta, para retirar el consentimiento deberá de eliminar la misma.</p>
+    <button onclick="consent()">Continuar</button>
+    <p class="red_text">Pulse este botón después de haber verificado la cuenta mediante el email</p>
   </body>
 </main>
 </html>

@@ -1,4 +1,4 @@
-# Archery Ghost Simulator Documentation
+# Home
 
 ![Developer Image](./images/developer.png)
 
