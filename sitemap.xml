@@ -2,27 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://isaaker.github.io/archerysimulator/</loc>
-         <lastmod>2024-02-15</lastmod>
+         <lastmod>2024-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://isaaker.github.io/archerysimulator/documentation/auth0/</loc>
-         <lastmod>2024-02-15</lastmod>
+         <lastmod>2024-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://isaaker.github.io/archerysimulator/documentation/contributing_documentation/</loc>
-         <lastmod>2024-02-15</lastmod>
+         <lastmod>2024-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://isaaker.github.io/archerysimulator/documentation/flask/</loc>
-         <lastmod>2024-02-15</lastmod>
+         <lastmod>2024-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://isaaker.github.io/archerysimulator/documentation/how_projects_works/</loc>
-         <lastmod>2024-02-15</lastmod>
+         <lastmod>2024-02-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://isaaker.github.io/archerysimulator/documentation/security/</loc>
+         <lastmod>2024-02-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
