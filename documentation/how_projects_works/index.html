@@ -131,6 +131,11 @@
         Technologies
       </a>
 </li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../security/">
+        Security
+      </a>
+</li>
 </ul>
 </div>
 </nav>
@@ -275,6 +280,26 @@
 </ul>
 </nav>
 </li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Security
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Security
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../security/">
+        Security
+      </a>
+</li>
+</ul>
+</nav>
+</li>
 </ul>
 </nav>
 </div>
@@ -348,6 +373,40 @@
 <p><img alt="Contributing Logo" src="../../images/contributing.svg"/></p>
 <p><strong>To start, if you don't have access to edit the main repo you can make a fork of the repo from <a href="https://github.com/Isaaker/Ghost_Simulator_ES/fork">here</a>. We work with pull request, so when you code is ready, you can make a pull request to the Develop branch of the main repo</strong></p>
 <h2 id="how-repository-works-scheme">How Repository Works Scheme<a class="headerlink" href="#how-repository-works-scheme" title="Permanent link">¶</a></h2>
+<pre class="mermaid"><code>flowchart TD
+    B1 -- fa:fa-code-fork New Fork --&gt; A3
+    C3 -- fa:fa-code-pull-request Pull Request to Develop --&gt; A2
+    B2 -- fa:fa-code Continue Development --&gt; A2
+    D2 -- fa:fa-bug Work in Beta --&gt; C2
+    F2 -- fa:fa-bug Fix Bugs &amp; Minor Changes --&gt; E2
+    B5 --&gt; F5
+    F2 --&gt; A4
+    A1 --&gt; B4
+    G2 --&gt; A4
+    A4 --&gt; B1
+    B4 --&gt; B1
+    B1 --&gt; A6
+    subgraph main[fa:fa-github Main Branch]
+        A1[fa:fa-clock Stable Version] --&gt; B1[fa:fa-clock Last Version of Main]
+    end
+    subgraph Develop[fa:fa-code-fork Develop Branch]
+       A2[fa:fa-code Dev Works into the Code] --&gt; B2[fa:fa-gears Alpha version] -- Finish Development --&gt; C2[fa:fa-gears Beta version] --&gt; D2[fa:fa-bug Debug and fix errors] -- Fixed all Bugs &amp; Errors --&gt; E2[fa:fa-gears Gamma version] --&gt; F2[fa:fa-vial Testing] -- Finish Testing --&gt; G2[fa:fa-gem Gold version - Release Candidate] --&gt; H1[fa:fa-flag-checkered Finsh &amp; Prepare the Pull Request] -- fa:fa-code-pull-request Pull Request to Main ---&gt; A1
+    end
+    subgraph fork[fa:fa-github Dev Fork]
+       A3[fa:fa-code Dev Works into the Code] --&gt; B3[fa:fa-gears Test changes] --&gt; C3[fa:fa-flag-checkered Finsh &amp; Prepare the Pull Request]
+    end
+    subgraph releases[fa:fa-clock Releases]
+        A4[fa:fa-clock Pre-Release]
+        B4[fa:fa-clock Release]
+    end
+    subgraph pull_request[fa:fa-code-pull-request Pull Request Process]
+        A5[fa:fa-magnifying-glass Review Changes] --&gt; B5[fa:fa-message Discussions] --&gt; C5[fa:fa-circle-check Pull Request Approved &amp; Changes Included] --&gt; D5[fa:fa-rectangle-xmark Close Pull Request] --&gt; E5[fa:fa-code-merge Merge Branch]
+        F5[fa:fa-circle-xmark Pull Request Denied &amp; Suggested solution] --&gt; G5[fa:fa-rectangle-xmark Close Pull Request] --&gt; H5[fa:fa-bug Fix errors] --&gt; I5[fa:fa-code-pull-request New Pull Request]
+    end
+    subgraph remote_server[fa:fa-terminal Remote Server]
+        A6[fa:fa-terminal-git-alt Git Client] --&gt; B6[fa:fa-terminal Remote Server] --&gt; C6[fa:fa-users End User]
+    end
+</code></pre>
 <h3 id="pull-request-approved">Pull Request Approved<a class="headerlink" href="#pull-request-approved" title="Permanent link">¶</a></h3>
 <p>If your Pull Request is approved, the following occurs:</p>
 <ol>
@@ -391,8 +450,9 @@
 </li>
 </ul>
 <p><strong>Example of versioning (included commit IDs are only examples):</strong></p>
-<pre class="mermaid"><code>    gitGraph
+<pre class="mermaid"><code>    gitGraph TB:
        branch Develop
+       checkout Develop
        commit tag:"v3.0.0-Alpha"
        commit tag:"v3.0.0-Alpha"
        commit tag:"v3.0.0-Beta"
@@ -402,6 +462,7 @@
        commit tag:"v3.0.0-Gamma"
        commit tag:"v3.0.0-Gold"
        checkout main
+       merge Develop
        commit tag:"v3.0.0-Stable"
        checkout Develop
 </code></pre>
