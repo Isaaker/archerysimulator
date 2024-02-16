@@ -8,7 +8,7 @@ We use a [separated repo](https://github.com/Isaaker/archerysimulator) to host t
 
 We use Markdown to write the documentation, this easy and fast language makes easy to us to write and deploy documentation using Mkdocs and GitHub Pages.
 
-[Learn about Markdown]](https://www.markdownguide.org/)
+[Learn about Markdown](https://www.markdownguide.org/)
 
 ## Mermaid (Schemes as code)
 

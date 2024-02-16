@@ -79,7 +79,7 @@ plugins:
 nav:
     - Home: "index.md"
     - Contributing:
-        - "Contributing to the Project": "documentation/how_projects_work.md"
+        - "Contributing to the Project": "documentation/how_projects_works.md"
         - "Contributing to the Documentation": "documentation/contributing_documentation.md"
     - Technologies:
         - "Auth0": "documentation/auth0.md"
