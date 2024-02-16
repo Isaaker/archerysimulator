@@ -1,0 +1,32 @@
+name: Mermaid Render Action
+on:
+  push:
+    paths:
+      - '**.mmd'
+      
+jobs:
+  launch-repolint:
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - name: Check out the code
+      uses: actions/checkout@v4.1.1
+      
+    - name: Install NodeJs                                                               # Install Software NodeJs 
+      uses: actions/setup-node@v4.0.2
+      with:
+        node-version: 20
+
+    - name: Install Mermaid CLI
+      run: |
+        npm install -g @mermaid-js/mermaid-cli
+
+    - name: Render .mmd files into .svg files
+      run: |
+        cd /docs/images/schemes
+        for file in *.mmd; do mermaid -i "$file" -o "${file%.*}.svg"; done
+    - name: Add changes to the current push
+      run: |
+        git add .
+        git commit -m "Rendering Mermaid Images with GitHub Actions"
+        git push
