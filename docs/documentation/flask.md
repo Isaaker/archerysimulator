@@ -6,9 +6,10 @@ Flask is an open-source project maintained by [The Pallets Projects](https://pal
 
 This project makes posible to code web applications with Python to complement other technologies like HTML, CSS and JS.
 
-> Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions. However, Flask supports extensions that can add application features as if they were implemented in Flask itself.
+!!! note
+    > Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions. However, Flask supports extensions that can add application features as if they were implemented in Flask itself.
+    [Font: Wikipedia](https://en.wikipedia.org/wiki/Flask_(web_framework))
 
-[Font: Wikipedia](https://en.wikipedia.org/wiki/Flask_(web_framework))
 ## What we use Flask?
 
 In previous versions, the project has used different technologies: HTML, PHP. And for the new version 3.0 we have started to include CSS to give a better look to the platform, JS that gives us the ability to integrate functionalities only possible with it, and we have decided to replace PHP by Python using Flask. We have made this decision even though PHP is a fundamental part of the platform, because we believe that Python will improve the platform in many aspects: Speed, Security, Integration and will give us new ways to develop by integrating this library its own micro web server that although not suitable for production use can be a good opportunity for developers to not have to download an additional web server.
@@ -23,7 +24,8 @@ Although Flask is a much more secure library than PHP and is more resistant to s
 
 ## Built-In server
 
-**THIS MICROSERVER SHOULD NEVER BE USED IN PRODUCTION.**
+!!! danger
+    THIS MICROSERVER SHOULD NEVER BE USED IN PRODUCTION.
 
 A great feature of Flask is that it comes with a small built-in server that allows the developer to work on the web application without having to install a web server on their computer.
 This built-in server displays the application through a localhost port and can even be viewed from other devices by performing certain configurations.
@@ -35,7 +37,8 @@ To run the micro server, run the below commands (This commands need to be ruined
 1. `. ./ghost_simulator/.venv/bin/activate`
 2. `flask --app ghost_simulator run`
 
-**Flask prints the URL to use in the explorer with the port.**
+!!! tip
+    Flask prints the URL to use in the explorer with the port.
 
 ### Options
 
@@ -61,7 +64,8 @@ To run the micro server, run the below commands (This commands need to be ruined
 
 --help                          Show this message and exit.
 
-Example: `flask --app ghost_simulator run --debug`
+!!! nota "Example"
+    `flask --app ghost_simulator run --debug`
 ### More info
 
 The information about the usage of the micro server can be found [here](https://flask.palletsprojects.com/en/3.0.x/server/)

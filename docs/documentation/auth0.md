@@ -6,7 +6,8 @@
 
 Auth0 is our Login and Identy provider and here you can find some important information to Develpo and Integrate the Platform with it.
 
-**Also we have a security [documentation section](https://isaaker.github.io/archerysimulator/documentation/security/)**
+!!! tip
+    Also we have a security [documentation section](https://isaaker.github.io/archerysimulator/documentation/security/)
 
 ## User info modifications
 
@@ -47,7 +48,8 @@ You should send an email to the platform administrator at the following address:
 
 This method has been created as a double layer of security to avoid that if the access to the old email is lost, it can be changed in order to regain access to the account.
 
-**For this method it is mandatory to have the recovery code that was sent to you when you created your account, this code is unalterable and will only be changed after you have used it. The password is not valid!!!**
+!!! warning
+    For this method it is mandatory to have the recovery code that was sent to you when you created your account, this code is unalterable and will only be changed after you have used it. The password is not valid!!!**
 
 **What happens?**
 
@@ -58,11 +60,13 @@ This method has been created as a double layer of security to avoid that if the 
 5. The user re-login with the new email and accepts the Conditions of use*
 6. The user can now use the new email!!!
 
-*[Please refer to this section of the Conditions of use](../CONDITIONS.html)
-> Al cambiar su dirección de email (previo aviso al administrador que es el encargado de realizar el cambio), se le volverá a solicitar que acepte las condiciones de uso de la plataforma, esto no implica que al cambiar el email halla dejado de aceptar las condiciones de uso, si no que nos indica que usted también acepta que se traten los datos de ese email.
+!!! note "Remember Conditions of use"
+    > Al cambiar su dirección de email (previo aviso al administrador que es el encargado de realizar el cambio), se le volverá a solicitar que acepte las condiciones de uso de la plataforma, esto no implica que al cambiar el email halla dejado de aceptar las condiciones de uso, si no que nos indica que usted también acepta que se traten los datos de ese email.
+    
+!!! tip
+    [Please refer to this section of the Conditions of use](../CONDITIONS.html)
 
 ## Auth0 endpoints
-
 
 |URL|Use|
 |---|---|

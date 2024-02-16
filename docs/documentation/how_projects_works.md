@@ -107,10 +107,11 @@ Our versioning system differentiates between two parts:
 
 ```mermaid
 gitGraph TB:
+    commit
     branch Develop
     checkout Develop
-    commit tag:"v3.0.0-Alpha"   
-    commit tag:"v3.0.0-Alpha"   
+    commit tag:"v3.0.0-Alpha"
+    commit tag:"v3.0.0-Alpha"
     commit tag:"v3.0.0-Beta"
     commit tag:"v3.0.0-Beta"
     commit tag:"v3.0.0-Beta"
@@ -120,5 +121,6 @@ gitGraph TB:
     checkout main
     merge Develop
     commit tag:"v3.0.0-Stable"
-    checkout Develop   
+    checkout Develop
+    commit tag:"v3.0.1-Alpha"  
 ```
