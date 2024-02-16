@@ -454,10 +454,11 @@
 </ul>
 <p><strong>Example of versioning (included commit IDs are only examples):</strong></p>
 <pre class="mermaid"><code>gitGraph TB:
+    commit
     branch Develop
     checkout Develop
-    commit tag:"v3.0.0-Alpha"   
-    commit tag:"v3.0.0-Alpha"   
+    commit tag:"v3.0.0-Alpha"
+    commit tag:"v3.0.0-Alpha"
     commit tag:"v3.0.0-Beta"
     commit tag:"v3.0.0-Beta"
     commit tag:"v3.0.0-Beta"
@@ -467,7 +468,8 @@
     checkout main
     merge Develop
     commit tag:"v3.0.0-Stable"
-    checkout Develop   
+    checkout Develop
+    commit tag:"v3.0.1-Alpha"  
 </code></pre>
 </article>
 </div>
