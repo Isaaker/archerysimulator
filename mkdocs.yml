@@ -52,7 +52,7 @@ markdown_extensions:
   - pymdownx.superfences:
         # make exceptions to highlighting of code:
       custom_fences:
-        - name: mermaid
+          name: mermaid
           class: mermaid
           format: !!python/name:mermaid2.fence_mermaid_custom
 
