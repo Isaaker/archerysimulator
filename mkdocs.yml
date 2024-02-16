@@ -1,13 +1,16 @@
 site_name: Ghost Simulator Documentation
 site_url: https://isaaker.github.io/archerysimulator
 site_description: Ghost Simulator - Documentation
-copyright: Copyright &copy; 2024 Isaac Hernan
+copyright: Copyright &copy; 2024 Isaac Hernan - License CC BY-NC-ND 4.0
+repo_url: https://github.com/Isaaker/Ghost_Simulator_ES
 
 theme:
     name: material
     language: "en"
     logo: ./images/logo.png
     favicon: ./images/favicon.ico
+    icon:
+      repo: fontawesome/brands/github
     font:
         text: Ubuntu 
         code: IBM Plex Mono 
@@ -47,10 +50,11 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.superfences:
+        # make exceptions to highlighting of code:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          format: !!python/name:mermaid2.fence_mermaid_custom
 
 plugins:
   - awesome-pages:
@@ -68,14 +72,16 @@ plugins:
       pretty_print: !ENV [PRETTY_RSS, false]
       length: 30
       match_path: "./*"
+  - mermaid2:
+      version: '10.1.0'
 
 
 nav:
     - "Home": "index.md"
-    - "Contributing": "index.md"
+    - "Contributing": "documentation/how_projects_work.md"
       - "Contributing to the Project": "documentation/how_projects_work.md"
       - "Contributing to the Documentation": "documentation/contributing_documentation.md"
-    - "Technologies": "index.md"
+    - "Technologies": "documentation/auth0.md"
       - "Auth0": "documentation/auth0.md"
       - "Flask": "documentation/flask.md"
     
