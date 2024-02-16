@@ -84,6 +84,8 @@ nav:
     - Technologies:
         - "Auth0": "documentation/auth0.md"
         - "Flask": "documentation/flask.md"
+    - Security:
+        - "Security": "documentation/security.md"
     
 
 extra:
