@@ -2,7 +2,8 @@
 
 ![Contributing Logo](../images/contributing.svg)
 
-**To start, if you don't have access to edit the main repo you can make a fork of the repo from [here](https://github.com/Isaaker/Ghost_Simulator_ES/fork). We work with pull request, so when you code is ready, you can make a pull request to the Develop branch of the main repo**
+!!! tip
+    To start, if you don't have access to edit the main repo you can make a fork of the repo from [here](https://github.com/Isaaker/Ghost_Simulator_ES/fork). We work with pull request, so when you code is ready, you can make a pull request to the Develop branch of the main repo
 
 ## How Repository Works Scheme
 
@@ -105,19 +106,19 @@ Our versioning system differentiates between two parts:
 **Example of versioning (included commit IDs are only examples):**
 
 ```mermaid
-    gitGraph TB:
-       branch Develop
-       checkout Develop
-       commit tag:"v3.0.0-Alpha"
-       commit tag:"v3.0.0-Alpha"
-       commit tag:"v3.0.0-Beta"
-       commit tag:"v3.0.0-Beta"
-       commit tag:"v3.0.0-Beta"
-       commit tag:"v3.0.0-Gamma"
-       commit tag:"v3.0.0-Gamma"
-       commit tag:"v3.0.0-Gold"
-       checkout main
-       merge Develop
-       commit tag:"v3.0.0-Stable"
-       checkout Develop
+gitGraph TB:
+    branch Develop
+    checkout Develop
+    commit tag:"v3.0.0-Alpha"   
+    commit tag:"v3.0.0-Alpha"   
+    commit tag:"v3.0.0-Beta"
+    commit tag:"v3.0.0-Beta"
+    commit tag:"v3.0.0-Beta"
+    commit tag:"v3.0.0-Gamma"
+    commit tag:"v3.0.0-Gamma"
+    commit tag:"v3.0.0-Gold"
+    checkout main
+    merge Develop
+    commit tag:"v3.0.0-Stable"
+    checkout Develop   
 ```

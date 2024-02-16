@@ -6,7 +6,7 @@
 
 Auth0 is our Login and Identy provider and here you can find some important information to Develpo and Integrate the Platform with it.
 
-**Also we have a security [documentation section](https://github.com/Isaaker/Ghost_Simulator_ES/wiki/Security)**
+**Also we have a security [documentation section](https://isaaker.github.io/archerysimulator/documentation/security/)**
 
 ## User info modifications
 
