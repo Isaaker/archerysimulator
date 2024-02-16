@@ -371,7 +371,10 @@
 <article class="md-content__inner md-typeset">
 <h1 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">¶</a></h1>
 <p><img alt="Contributing Logo" src="../../images/contributing.svg"/></p>
-<p><strong>To start, if you don't have access to edit the main repo you can make a fork of the repo from <a href="https://github.com/Isaaker/Ghost_Simulator_ES/fork">here</a>. We work with pull request, so when you code is ready, you can make a pull request to the Develop branch of the main repo</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To start, if you don't have access to edit the main repo you can make a fork of the repo from <a href="https://github.com/Isaaker/Ghost_Simulator_ES/fork">here</a>. We work with pull request, so when you code is ready, you can make a pull request to the Develop branch of the main repo</p>
+</div>
 <h2 id="how-repository-works-scheme">How Repository Works Scheme<a class="headerlink" href="#how-repository-works-scheme" title="Permanent link">¶</a></h2>
 <pre class="mermaid"><code>flowchart TD
     B1 -- fa:fa-code-fork New Fork --&gt; A3
@@ -450,21 +453,21 @@
 </li>
 </ul>
 <p><strong>Example of versioning (included commit IDs are only examples):</strong></p>
-<pre class="mermaid"><code>    gitGraph TB:
-       branch Develop
-       checkout Develop
-       commit tag:"v3.0.0-Alpha"
-       commit tag:"v3.0.0-Alpha"
-       commit tag:"v3.0.0-Beta"
-       commit tag:"v3.0.0-Beta"
-       commit tag:"v3.0.0-Beta"
-       commit tag:"v3.0.0-Gamma"
-       commit tag:"v3.0.0-Gamma"
-       commit tag:"v3.0.0-Gold"
-       checkout main
-       merge Develop
-       commit tag:"v3.0.0-Stable"
-       checkout Develop
+<pre class="mermaid"><code>gitGraph TB:
+    branch Develop
+    checkout Develop
+    commit tag:"v3.0.0-Alpha"   
+    commit tag:"v3.0.0-Alpha"   
+    commit tag:"v3.0.0-Beta"
+    commit tag:"v3.0.0-Beta"
+    commit tag:"v3.0.0-Beta"
+    commit tag:"v3.0.0-Gamma"
+    commit tag:"v3.0.0-Gamma"
+    commit tag:"v3.0.0-Gold"
+    checkout main
+    merge Develop
+    commit tag:"v3.0.0-Stable"
+    checkout Develop   
 </code></pre>
 </article>
 </div>
